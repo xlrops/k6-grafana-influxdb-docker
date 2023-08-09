@@ -11,8 +11,9 @@ To deploy this project run
   git clone https://github.com/xlrops/k6-grafana-influxdb-docker.git
   cd ./k6-grafana-influxdb-docker
   docker-compose up --build --force-recreate -d influxdb grafana
-  http://localhost:3000/dashboards
 ```
+View the dashboard in the Grafana at : http://localhost:3000/dashboards/f/k6tests/k6-tests
+
 ## Deployment
 
 To run the k6 scenarios run the following
@@ -22,7 +23,7 @@ To run the k6 scenarios run the following
  docker-compose run -v $PWD/scenarios:/scenarios k6 run --vus 50 -i 50 /scenarios/scenario_01.js
  docker-compose run -v $PWD/scenarios:/scenarios k6 run --vus 1 -i 1 /scenarios/scenario_all.js
 ```
-Then view the results in the Grafana dashboard at : http://localhost:3000/dashboards/f/k6tests/k6-tests
+Now view the results in the Grafana dashboard at : http://localhost:3000/dashboards/f/k6tests/k6-tests
 
 ## Clean-up
 
