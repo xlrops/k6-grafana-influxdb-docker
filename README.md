@@ -14,7 +14,7 @@ To deploy this project run
 ```
 View the dashboard in the Grafana at : http://localhost:3000/dashboards/f/k6tests/k6-tests
 
-## Deployment
+## Run K6 Scenarios
 
 To run the k6 scenarios run the following
 
