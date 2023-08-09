@@ -19,7 +19,7 @@ To run the k6 scenarios run the following
 
 ```bash
  docker-compose run -v $PWD/scenarios:/scenarios k6 run --vus 1 /scenarios/scenario_01.js
- docker-compose run -v $PWD/scenarios:/scenarios k6 run --vus 50 -i 50 /scenarios/ scenario_01.js
+ docker-compose run -v $PWD/scenarios:/scenarios k6 run --vus 50 -i 50 /scenarios/scenario_01.js
  docker-compose run -v $PWD/scenarios:/scenarios k6 run --vus 1 -i 1 /scenarios/scenario_all.js
 ```
 Then view the results in the Grafana dashboard at : http://localhost:3000/dashboards/f/k6tests/k6-tests
